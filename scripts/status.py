@@ -18,20 +18,21 @@ ORG = "Scouren"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 WEEKS = 26
 
-# Stage order follows a design's path; a public repo missing here lands in "Other".
-# (stage, repo, main CI workflow file or None)
+# Groups match the Open Source page on scouren.com; a public repo missing here lands in "Other".
+# (group, repo, main CI workflow file or None)
 REPOS = [
-    ("Start a project", "AMTemplate", "ci.yaml"),
-    ("Schematic", "Schemify-Releases", None),
-    ("Schemify plugins", "Schemify-Plugins", "ci.yml"),
-    ("Schemify plugins", "Interoperate", "ci.yml"),
-    ("Schemify plugins", "GmIdW", "ci.yml"),
-    ("Schemify plugins", "Schemify-Themes", "gate.yaml"),
+    ("Schemify ecosystem", "Schemify-Plugins", "ci.yml"),
+    ("Schemify ecosystem", "GmIdW", "ci.yml"),
+    ("Schemify ecosystem", "Interoperate", "ci.yml"),
+    ("Schemify ecosystem", "Schemify-Themes", "gate.yaml"),
     ("Simulation", "ESpice", "test.yml"),
     ("Simulation", "VerA", "test.yaml"),
-    ("Layout", "GPurify", "test.yml"),
-    ("Suites", "Conformance-Suite", "conformance.yml"),
+    ("Verification", "GPurify", "test.yml"),
+    ("Project setup & standards", "AMTemplate", "ci.yaml"),
+    ("Project setup & standards", "Conformance-Suite", "conformance.yml"),
 ]
+# Distribution repos for Schemify itself; the profile's Schemify section covers them.
+SKIP = {".github", "Schemify-Releases", "homebrew-schemify"}
 
 # Ordinal blue pair validated with the dataviz validator (closed > open) on GitHub's surfaces.
 THEMES = {
@@ -83,7 +84,7 @@ def commits(repo):
 def collect():
     public = {r["name"]: r for r in api(f"orgs/{ORG}/repos?type=public&per_page=100") if not r["archived"]}
     order = [(s, r, ci) for s, r, ci in REPOS if r in public]
-    order += [("Other", r, None) for r in sorted(public) if r not in {x[1] for x in REPOS} and r != ".github"]
+    order += [("Other", r, None) for r in sorted(public) if r not in {x[1] for x in REPOS} and r not in SKIP]
     rows = []
     for stage, repo, ci in order:
         rel = api(f"repos/{ORG}/{repo}/releases/latest")
@@ -153,7 +154,7 @@ def svg(rows, t, today):
 
 
 def table(rows):
-    out = ["| Stage | Project | What it does | Status |", "|---|---|---|---|"]
+    out = ["| Group | Project | What it does | Status |", "|---|---|---|---|"]
     for r in rows:
         url = f"https://github.com/{ORG}/{r['repo']}"
         badges = []
