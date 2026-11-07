@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render the OpenFAT front page's project status: profile/status-{light,dark}.svg and the
+"""Render the Scouren front page's project status: profile/status-{light,dark}.svg and the
 table between the status markers in profile/README.md. Stdlib only; GH_TOKEN raises the rate limit.
 
 Per public repo it reads the issues (closed vs open, leaving out the "[PR] …" and "(deleted)"
@@ -14,7 +14,7 @@ import time
 import urllib.error
 import urllib.request
 
-ORG = "OpenFAT"
+ORG = "Scouren"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 WEEKS = 26
 
@@ -22,18 +22,15 @@ WEEKS = 26
 # (stage, repo, main CI workflow file or None)
 REPOS = [
     ("Start a project", "AMTemplate", "ci.yaml"),
-    ("Schematic", "Schemify", "ci.yml"),
+    ("Schematic", "Schemify-Releases", None),
+    ("Schemify plugins", "Schemify-Plugins", "ci.yml"),
     ("Schemify plugins", "Interoperate", "ci.yml"),
-    ("Schemify plugins", "cktImg", "ci.yml"),
-    ("Schemify plugins", "PDK-Manager", "ci.yml"),
-    ("Schemify plugins", "GmId-Visualizer", "ci.yml"),
+    ("Schemify plugins", "GmIdW", "ci.yml"),
     ("Schemify plugins", "Schemify-Themes", "gate.yaml"),
-    ("Simulation", "ESPice", "test.yml"),
+    ("Simulation", "ESpice", "test.yml"),
     ("Simulation", "VerA", "test.yaml"),
-    ("Layout", "Philis", "ci.yml"),
     ("Layout", "GPurify", "test.yml"),
-    ("Suites", "VAMS-Conformance-Suite", "conformance.yml"),
-    ("Libraries", "SpiceRack", "test.yaml"),
+    ("Suites", "Conformance-Suite", "conformance.yml"),
 ]
 
 # Ordinal blue pair validated with the dataviz validator (closed > open) on GitHub's surfaces.
@@ -105,7 +102,7 @@ def svg(rows, t, today):
     H = 104 + len(rows) * ROW + len(stages) * HEAD + 16
     o = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" '
          f'font-family="{FONT}" role="img" aria-labelledby="t d">',
-         '<title id="t">OpenFAT project status</title>',
+         '<title id="t">Scouren project status</title>',
          f'<desc id="d">Per project: issues closed and still open, and commits per week over the last {WEEKS} weeks. '
          f'The table below the chart has the same projects. Updated {today}.</desc>',
          f'<text x="0" y="22" font-size="18" font-weight="600" fill="{t["text"]}">Project status</text>',
@@ -180,7 +177,7 @@ def main():
     block = ("<!-- status:start -->\n<picture>\n"
              '  <source media="(prefers-color-scheme: dark)" srcset="status-dark.svg">\n'
              '  <img src="status-light.svg" alt="Project status: issues closed and open, and commits per week, '
-             'for each OpenFAT project. The table below lists the same projects.">\n'
+             'for each Scouren project. The table below lists the same projects.">\n'
              f"</picture>\n\n{table(rows)}\n<!-- status:end -->")
     text, n = re.subn(r"<!-- status:start -->.*?<!-- status:end -->", lambda _: block, text, flags=re.S)
     assert n == 1, "profile/README.md needs one status:start/status:end block"
