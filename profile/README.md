@@ -78,3 +78,7 @@ These tools are young and move quickly. The chart shows how much of each project
 | Project setup & standards | [AMTemplate](https://github.com/Scouren/AMTemplate) | Template for analog and mixed-signal ASIC design on open-source tools | [![CI](https://github.com/Scouren/AMTemplate/actions/workflows/ci.yaml/badge.svg)](https://github.com/Scouren/AMTemplate/actions/workflows/ci.yaml) ![last commit](https://img.shields.io/github/last-commit/Scouren/AMTemplate?label=last%20commit) |
 | Project setup & standards | [Conformance-Suite](https://github.com/Scouren/Conformance-Suite) | A conformance suite for Verilog-AMS (Containing Verilog-A & IEEE 1364 specifics) | [![CI](https://github.com/Scouren/Conformance-Suite/actions/workflows/conformance.yml/badge.svg)](https://github.com/Scouren/Conformance-Suite/actions/workflows/conformance.yml) ![last commit](https://img.shields.io/github/last-commit/Scouren/Conformance-Suite?label=last%20commit) |
 <!-- status:end -->
+
+## Support the open-source tools
+
+The open-source projects are partly community funded. To sponsor the work, or to sponsor by invoice as a company, email [sponsors@scouren.com](mailto:sponsors@scouren.com).
