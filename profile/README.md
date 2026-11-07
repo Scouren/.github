@@ -5,7 +5,6 @@ Scouren builds fast, open analog tooling for analog and mixed-signal IC design, 
 Scouren covers the steps of an analog design one tool at a time:
 - schematic capture in **Schemify**
 - SPICE simulation in **ESpice**, with device models written in Verilog-A and compiled by **VerA**
-- layout from a netlist in **Philis** (coming soon)
 - DRC, LVS, ERC and PEX in **GPurify**
 
 Each tool also works on its own beside the tools you already use. Schemify writes netlists for ngspice, Xyce, LTspice and HSPICE, and its Interoperate plugin moves designs to and from Cadence Virtuoso and xschem.
@@ -15,8 +14,7 @@ flowchart LR
   T["AMTemplate<br/>project template"] --> S["Schemify<br/>schematic"]
   S -->|netlist| E["ESpice<br/>simulation"]
   V["VerA<br/>Verilog-A models"] --> E
-  S -->|netlist| P["Philis<br/>layout"]
-  P -->|GDS| G["GPurify<br/>DRC · LVS · PEX"]
+  S -->|netlist for LVS| G["GPurify<br/>DRC · LVS · PEX"]
 ```
 
 ## Try it
