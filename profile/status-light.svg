@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="920" height="580" viewBox="0 0 920 580" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" role="img" aria-labelledby="t d">
 <title id="t">Scouren project status</title>
-<desc id="d">Per project: issues closed and still open, and commits per week over the last 26 weeks. The table below the chart has the same projects. Updated 2026-11-09.</desc>
+<desc id="d">Per project: issues closed and still open, and commits per week over the last 26 weeks. The table below the chart has the same projects. Updated 2026-11-10.</desc>
 <text x="0" y="22" font-size="18" font-weight="600" fill="#1f2328">Project status</text>
-<text x="0" y="44" font-size="12" fill="#59636e">Issues closed so far, and commits per week over the last 26 weeks (each row on its own scale). Updated 2026-11-09.</text>
+<text x="0" y="44" font-size="12" fill="#59636e">Issues closed so far, and commits per week over the last 26 weeks (each row on its own scale). Updated 2026-11-10.</text>
 <rect x="210" y="66" width="10" height="10" rx="2" fill="#2a78d6"/>
 <text x="225" y="75" font-size="12" fill="#59636e">closed</text>
 <rect x="280" y="66" width="10" height="10" rx="2" fill="#86b6ef"/>
@@ -68,8 +68,8 @@
 <rect x="210" y="450.0" width="250" height="10" rx="3" fill="#2a78d6"/>
 <text x="470" y="459.0" font-size="12" fill="#59636e" style="font-variant-numeric:tabular-nums">100% closed · 0 open</text>
 <line x1="600" y1="465.0" x2="820" y2="465.0" stroke="#d1d9e0" stroke-width="1"/>
-<polyline points="600.0,465.0 608.8,465.0 617.6,465.0 626.4,465.0 635.2,465.0 644.0,465.0 652.8,465.0 661.6,465.0 670.4,465.0 679.2,465.0 688.0,465.0 696.8,465.0 705.6,465.0 714.4,465.0 723.2,465.0 732.0,465.0 740.8,465.0 749.6,465.0 758.4,465.0 767.2,465.0 776.0,465.0 784.8,465.0 793.6,445.0 802.4,460.3 811.2,463.1 820.0,465.0" fill="none" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-<text x="830" y="459.0" font-size="12" fill="#59636e" style="font-variant-numeric:tabular-nums">97 commits</text>
+<polyline points="600.0,465.0 608.8,465.0 617.6,465.0 626.4,465.0 635.2,465.0 644.0,465.0 652.8,465.0 661.6,465.0 670.4,465.0 679.2,465.0 688.0,465.0 696.8,465.0 705.6,465.0 714.4,465.0 723.2,465.0 732.0,465.0 740.8,465.0 749.6,465.0 758.4,465.0 767.2,465.0 776.0,465.0 784.8,465.0 793.6,445.0 802.4,460.3 811.2,463.1 820.0,464.7" fill="none" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="830" y="459.0" font-size="12" fill="#59636e" style="font-variant-numeric:tabular-nums">98 commits</text>
 <text x="0" y="488" font-size="11" font-weight="600" letter-spacing="0.06em" fill="#818b98">OTHER</text>
 <line x1="0" y1="493" x2="920" y2="493" stroke="#d1d9e0" stroke-width="1"/>
 <text x="0" y="515.0" font-size="13" font-weight="500" fill="#1f2328">Schemify-Git</text>
