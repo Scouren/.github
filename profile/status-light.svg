@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="920" height="580" viewBox="0 0 920 580" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" role="img" aria-labelledby="t d">
 <title id="t">Scouren project status</title>
-<desc id="d">Per project: issues closed and still open, and commits per week over the last 26 weeks. The table below the chart has the same projects. Updated 2026-11-10.</desc>
+<desc id="d">Per project: issues closed and still open, and commits per week over the last 26 weeks. The table below the chart has the same projects. Updated 2026-11-11.</desc>
 <text x="0" y="22" font-size="18" font-weight="600" fill="#1f2328">Project status</text>
-<text x="0" y="44" font-size="12" fill="#59636e">Issues closed so far, and commits per week over the last 26 weeks (each row on its own scale). Updated 2026-11-10.</text>
+<text x="0" y="44" font-size="12" fill="#59636e">Issues closed so far, and commits per week over the last 26 weeks (each row on its own scale). Updated 2026-11-11.</text>
 <rect x="210" y="66" width="10" height="10" rx="2" fill="#2a78d6"/>
 <text x="225" y="75" font-size="12" fill="#59636e">closed</text>
 <rect x="280" y="66" width="10" height="10" rx="2" fill="#86b6ef"/>
@@ -35,16 +35,16 @@
 <text x="0" y="260" font-size="11" font-weight="600" letter-spacing="0.06em" fill="#818b98">SIMULATION</text>
 <line x1="0" y1="265" x2="920" y2="265" stroke="#d1d9e0" stroke-width="1"/>
 <text x="0" y="287.0" font-size="13" font-weight="500" fill="#1f2328">ESpice</text>
-<rect x="210" y="278.0" width="224" height="10" rx="3" fill="#2a78d6"/>
-<rect x="436" y="278.0" width="24" height="10" rx="3" fill="#86b6ef"/>
-<text x="470" y="287.0" font-size="12" fill="#59636e" style="font-variant-numeric:tabular-nums">90% closed · 24 open</text>
+<rect x="210" y="278.0" width="226" height="10" rx="3" fill="#2a78d6"/>
+<rect x="438" y="278.0" width="22" height="10" rx="3" fill="#86b6ef"/>
+<text x="470" y="287.0" font-size="12" fill="#59636e" style="font-variant-numeric:tabular-nums">91% closed · 22 open</text>
 <line x1="600" y1="293.0" x2="820" y2="293.0" stroke="#d1d9e0" stroke-width="1"/>
 <polyline points="600.0,289.1 608.8,288.2 617.6,289.7 626.4,289.7 635.2,289.4 644.0,289.4 652.8,289.4 661.6,289.8 670.4,290.0 679.2,288.8 688.0,290.0 696.8,289.1 705.6,288.5 714.4,288.9 723.2,288.8 732.0,289.1 740.8,288.9 749.6,289.4 758.4,289.1 767.2,288.7 776.0,288.9 784.8,289.2 793.6,273.0 802.4,283.4 811.2,289.2 820.0,293.0" fill="none" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
 <text x="830" y="287.0" font-size="12" fill="#59636e" style="font-variant-numeric:tabular-nums">810 commits</text>
 <text x="0" y="317.0" font-size="13" font-weight="500" fill="#1f2328">VerA</text>
-<rect x="210" y="308.0" width="242" height="10" rx="3" fill="#2a78d6"/>
-<rect x="454" y="308.0" width="6" height="10" rx="3" fill="#86b6ef"/>
-<text x="470" y="317.0" font-size="12" fill="#59636e" style="font-variant-numeric:tabular-nums">98% closed · 2 open</text>
+<rect x="210" y="308.0" width="239" height="10" rx="3" fill="#2a78d6"/>
+<rect x="451" y="308.0" width="9" height="10" rx="3" fill="#86b6ef"/>
+<text x="470" y="317.0" font-size="12" fill="#59636e" style="font-variant-numeric:tabular-nums">97% closed · 3 open</text>
 <line x1="600" y1="323.0" x2="820" y2="323.0" stroke="#d1d9e0" stroke-width="1"/>
 <polyline points="600.0,320.1 608.8,319.6 617.6,319.5 626.4,319.3 635.2,319.2 644.0,319.9 652.8,320.1 661.6,319.9 670.4,320.5 679.2,320.1 688.0,319.9 696.8,319.6 705.6,319.8 714.4,319.4 723.2,320.6 732.0,320.2 740.8,320.2 749.6,319.7 758.4,319.5 767.2,319.9 776.0,319.5 784.8,319.0 793.6,303.0 802.4,306.8 811.2,312.1 820.0,323.0" fill="none" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
 <text x="830" y="317.0" font-size="12" fill="#59636e" style="font-variant-numeric:tabular-nums">1,725 commits</text>
