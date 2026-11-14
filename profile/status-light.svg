@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="920" height="580" viewBox="0 0 920 580" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" role="img" aria-labelledby="t d">
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="610" viewBox="0 0 920 610" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" role="img" aria-labelledby="t d">
 <title id="t">Scouren project status</title>
-<desc id="d">Per project: issues closed and still open, and commits per week over the last 26 weeks. The table below the chart has the same projects. Updated 2026-11-13.</desc>
+<desc id="d">Per project: issues closed and still open, and commits per week over the last 26 weeks. The table below the chart has the same projects. Updated 2026-11-14.</desc>
 <text x="0" y="22" font-size="18" font-weight="600" fill="#1f2328">Project status</text>
-<text x="0" y="44" font-size="12" fill="#59636e">Issues closed so far, and commits per week over the last 26 weeks (each row on its own scale). Updated 2026-11-13.</text>
+<text x="0" y="44" font-size="12" fill="#59636e">Issues closed so far, and commits per week over the last 26 weeks (each row on its own scale). Updated 2026-11-14.</text>
 <rect x="210" y="66" width="10" height="10" rx="2" fill="#2a78d6"/>
 <text x="225" y="75" font-size="12" fill="#59636e">closed</text>
 <rect x="280" y="66" width="10" height="10" rx="2" fill="#86b6ef"/>
@@ -35,9 +35,9 @@
 <text x="0" y="260" font-size="11" font-weight="600" letter-spacing="0.06em" fill="#818b98">SIMULATION</text>
 <line x1="0" y1="265" x2="920" y2="265" stroke="#d1d9e0" stroke-width="1"/>
 <text x="0" y="287.0" font-size="13" font-weight="500" fill="#1f2328">ESpice</text>
-<rect x="210" y="278.0" width="226" height="10" rx="3" fill="#2a78d6"/>
-<rect x="438" y="278.0" width="22" height="10" rx="3" fill="#86b6ef"/>
-<text x="470" y="287.0" font-size="12" fill="#59636e" style="font-variant-numeric:tabular-nums">91% closed · 22 open</text>
+<rect x="210" y="278.0" width="225" height="10" rx="3" fill="#2a78d6"/>
+<rect x="437" y="278.0" width="23" height="10" rx="3" fill="#86b6ef"/>
+<text x="470" y="287.0" font-size="12" fill="#59636e" style="font-variant-numeric:tabular-nums">91% closed · 23 open</text>
 <line x1="600" y1="293.0" x2="820" y2="293.0" stroke="#d1d9e0" stroke-width="1"/>
 <polyline points="600.0,289.1 608.8,288.2 617.6,289.7 626.4,289.7 635.2,289.4 644.0,289.4 652.8,289.4 661.6,289.8 670.4,290.0 679.2,288.8 688.0,290.0 696.8,289.1 705.6,288.5 714.4,288.9 723.2,288.8 732.0,289.1 740.8,288.9 749.6,289.4 758.4,289.1 767.2,288.7 776.0,288.9 784.8,289.2 793.6,273.0 802.4,283.4 811.2,289.2 820.0,293.0" fill="none" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
 <text x="830" y="287.0" font-size="12" fill="#59636e" style="font-variant-numeric:tabular-nums">810 commits</text>
@@ -77,9 +77,16 @@
 <line x1="600" y1="521.0" x2="820" y2="521.0" stroke="#d1d9e0" stroke-width="1"/>
 <polyline points="600.0,521.0 608.8,521.0 617.6,521.0 626.4,521.0 635.2,521.0 644.0,521.0 652.8,521.0 661.6,521.0 670.4,521.0 679.2,521.0 688.0,521.0 696.8,521.0 705.6,521.0 714.4,521.0 723.2,521.0 732.0,521.0 740.8,521.0 749.6,521.0 758.4,521.0 767.2,521.0 776.0,521.0 784.8,521.0 793.6,521.0 802.4,521.0 811.2,521.0 820.0,501.0" fill="none" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
 <text x="830" y="515.0" font-size="12" fill="#59636e" style="font-variant-numeric:tabular-nums">1 commit</text>
-<text x="0" y="545.0" font-size="13" font-weight="500" fill="#1f2328">schemify-index</text>
-<text x="210" y="545.0" font-size="12" fill="#818b98">no issues yet</text>
+<text x="0" y="545.0" font-size="13" font-weight="500" fill="#1f2328">SpiceRack</text>
+<rect x="210" y="536.0" width="123" height="10" rx="3" fill="#2a78d6"/>
+<rect x="335" y="536.0" width="125" height="10" rx="3" fill="#86b6ef"/>
+<text x="470" y="545.0" font-size="12" fill="#59636e" style="font-variant-numeric:tabular-nums">50% closed · 1 open</text>
 <line x1="600" y1="551.0" x2="820" y2="551.0" stroke="#d1d9e0" stroke-width="1"/>
-<polyline points="600.0,551.0 608.8,551.0 617.6,551.0 626.4,551.0 635.2,551.0 644.0,551.0 652.8,551.0 661.6,551.0 670.4,551.0 679.2,551.0 688.0,551.0 696.8,551.0 705.6,551.0 714.4,551.0 723.2,551.0 732.0,551.0 740.8,551.0 749.6,551.0 758.4,551.0 767.2,551.0 776.0,551.0 784.8,551.0 793.6,551.0 802.4,551.0 811.2,531.0 820.0,531.0" fill="none" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-<text x="830" y="545.0" font-size="12" fill="#59636e" style="font-variant-numeric:tabular-nums">2 commits</text>
+<polyline points="600.0,550.7 608.8,548.2 617.6,550.6 626.4,550.9 635.2,551.0 644.0,551.0 652.8,551.0 661.6,551.0 670.4,551.0 679.2,551.0 688.0,551.0 696.8,551.0 705.6,551.0 714.4,551.0 723.2,551.0 732.0,551.0 740.8,551.0 749.6,551.0 758.4,550.6 767.2,551.0 776.0,550.0 784.8,551.0 793.6,544.2 802.4,546.7 811.2,531.0 820.0,551.0" fill="none" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="830" y="545.0" font-size="12" fill="#59636e" style="font-variant-numeric:tabular-nums">255 commits</text>
+<text x="0" y="575.0" font-size="13" font-weight="500" fill="#1f2328">schemify-index</text>
+<text x="210" y="575.0" font-size="12" fill="#818b98">no issues yet</text>
+<line x1="600" y1="581.0" x2="820" y2="581.0" stroke="#d1d9e0" stroke-width="1"/>
+<polyline points="600.0,581.0 608.8,581.0 617.6,581.0 626.4,581.0 635.2,581.0 644.0,581.0 652.8,581.0 661.6,581.0 670.4,581.0 679.2,581.0 688.0,581.0 696.8,581.0 705.6,581.0 714.4,581.0 723.2,581.0 732.0,581.0 740.8,581.0 749.6,581.0 758.4,581.0 767.2,581.0 776.0,581.0 784.8,581.0 793.6,581.0 802.4,581.0 811.2,561.0 820.0,561.0" fill="none" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="830" y="575.0" font-size="12" fill="#59636e" style="font-variant-numeric:tabular-nums">2 commits</text>
 </svg>
