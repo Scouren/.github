@@ -14,6 +14,11 @@
 
 ## Schemify
 
+<p align="center">
+  <a href="https://scouren.github.io/Schemify-Plugins/assets/demo.mp4"><img src="https://raw.githubusercontent.com/Scouren/Schemify-Plugins/main/assets/demo.webp" alt="Demo: designing an op-amp in Schemify, from specifications to a transistor design simulated on ngspice, Xyce, Spectre and HSPICE" width="860"></a><br>
+  <sub>▶ <a href="https://scouren.github.io/Schemify-Plugins/assets/demo.mp4"><b>Watch the 3-minute demo</b></a>: specifications to a working op-amp with the agent, simulated on four simulators</sub>
+</p>
+
 **Schemify is our schematic editor for analog and mixed-signal IC design.** It's a fast, lightweight replacement for xschem, written in Rust. It draws schematics, writes netlists for ESpice, ngspice, Xyce, LTspice, HSPICE, CDL, Spectre and Verilog, runs the simulation and shows the waveforms. It imports xschem libraries and PDKs, so you can switch without redrawing anything.
 
 <p align="center">
