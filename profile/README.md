@@ -14,6 +14,8 @@
 
 ## Schemify
 
+Yes I'm aware the audio is messed up, I tried using AI to create this video but it sucks...
+
 <p align="center">
   <a href="https://scouren.github.io/Schemify-Plugins/assets/demo.mp4"><img src="https://raw.githubusercontent.com/Scouren/Schemify-Plugins/main/assets/demo.webp" alt="Demo: designing an op-amp in Schemify, from specifications to a transistor design simulated on ngspice, Xyce, Spectre and HSPICE" width="860"></a><br>
   <sub>▶ <a href="https://scouren.github.io/Schemify-Plugins/assets/demo.mp4"><b>Watch the 3-minute demo</b></a>: specifications to a working op-amp with the agent, simulated on four simulators</sub>
