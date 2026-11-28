@@ -14,11 +14,8 @@
 
 ## Schemify
 
-Yes I'm aware the audio is messed up, I tried using AI to create this video but it sucks...
-
 <p align="center">
-  <a href="https://scouren.github.io/Schemify-Plugins/assets/demo.mp4"><img src="https://raw.githubusercontent.com/Scouren/Schemify-Plugins/main/assets/demo.webp" alt="Demo: designing an op-amp in Schemify, from specifications to a transistor design simulated on ngspice, Xyce, Spectre and HSPICE" width="860"></a><br>
-  <sub>▶ <a href="https://scouren.github.io/Schemify-Plugins/assets/demo.mp4"><b>Watch the 3-minute demo</b></a>: specifications to a working op-amp with the agent, simulated on four simulators</sub>
+  <img src="screenshots/steps/03-sim.png" alt="Schemify after a simulation: the RC bench, its docs page, and the Results pane with the run's measurements and log" width="860">
 </p>
 
 **Schemify is our schematic editor for analog and mixed-signal IC design.** It's a fast, lightweight replacement for xschem, written in Rust. It draws schematics, writes netlists for ESpice, ngspice, Xyce, LTspice, HSPICE, CDL, Spectre and Verilog, runs the simulation and shows the waveforms. It imports xschem libraries and PDKs, so you can switch without redrawing anything.
@@ -33,10 +30,25 @@ Yes I'm aware the audio is messed up, I tried using AI to create this video but 
 - **A small core with plugins, like Neovim.** Plugins are sandboxed wasm with the permissions you grant. Even the xschem-style menus are a plugin you can replace.
 - **The same netlist everywhere.** Byte-identical output on Linux, macOS, Windows and WASI, with xschem's default keys.
 
+### From schematic to simulation, step by step
+
 | | |
 |---|---|
-| ![An RC bench after a simulation: docs page with a plot, results table, run log and waveform viewer](screenshots/simulate.png) | ![A two-stage op-amp drawn automatically from a SPICE netlist](screenshots/two_stage_opamp.png) |
-| Simulate, then read results, specs and waveforms | A SPICE netlist turned into a schematic |
+| ![The Explorer beside a schematic](screenshots/steps/05-explorer.png) | ![Drawing a wire](screenshots/steps/06-wiring.png) |
+| 1. Open a project: cells, outline and nets | 2. Draw and wire the schematic |
+| ![The netlist written through SPRack](screenshots/steps/11-netlist.png) | ![Simulation results and run log](screenshots/steps/03-sim.png) |
+| 3. Netlist it (any dialect, through SPRack) | 4. Simulate: measurements, specs and the run log |
+| ![The waveform viewer](screenshots/steps/04-waves.png) | ![A docs page variable edit recomputing the page](screenshots/steps/12-docs-edit.png) |
+| 5. Read the waveforms | 6. Size it on the docs page: values recompute live |
+| ![The generated layout open in KLayout](screenshots/steps/10-klayout.png) | |
+| 7. Generate the layout and open it in KLayout | |
+
+### The agent (in progress)
+
+| | | |
+|---|---|---|
+| ![The agent asks before installing anything](screenshots/steps/07-agent-ask.png) | ![The agent stages its edit for review](screenshots/steps/08-agent-staged.png) | ![Accepted: the schematic redrawn with the new width](screenshots/steps/09-agent-accepted.png) |
+| It asks before anything it can't undo | Edits are staged for your review | Accept, and the schematic is redrawn |
 
 ### Install
 
